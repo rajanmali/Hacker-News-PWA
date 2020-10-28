@@ -29,7 +29,7 @@ class Index extends React.Component {
   componentDidMount() {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
-        .register("/service-worker.js")
+        .register("/service-worker.js", { scope: "/" })
         .then((registration) => {
           console.log("service worker registration successful", registration);
         })
