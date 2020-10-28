@@ -1,0 +1,50 @@
+@import "./components.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+body {
+  background: white;
+  font-family: "Lato", sans-serif;
+}
+
+/*      Layout Styling       */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f6f6ef;
+}
+
+/*      Story Page Styling       */
+.story-main {
+  padding: 1em;
+
+  .story-title {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 300;
+    padding-bottom: 0.5em;
+
+    a {
+      color: #333333;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .story-details {
+    font-size: 0.8rem;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    margin-bottom: 1em;
+
+    strong {
+      margin: 1em;
+
+      a {
+        color: #f60;
+      }
+    }
+  }
+}
